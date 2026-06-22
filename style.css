@@ -1,0 +1,18 @@
+html{  
+    box-sizing: border-box;/*create border box sizing for all elements*/
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Times New Roman', 'Verdana', serif;
+    font-size: 18px;
+        
+
+
+}  /*create universal rules for all elements
