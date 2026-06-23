@@ -9,10 +9,57 @@ html{
     box-sizing: inherit;
 }
 
-body{
+body{   /*create universal rules for all elements*/
     font-family: 'Times New Roman', 'Verdana', serif;
     font-size: 18px;
+    background: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
         
+}  
+
+.odin-home{ /*create slightly darker container box */
+    padding-bottom: 5px;
+    margin-top: -10px; /*align header closer to the top of the page */
+    background: rgba(128, 128, 128, 0.094);
+    
+}
+
+.title,
+.sub-title{
+    text-align: center;
+}
 
 
-}  /*create universal rules for all elements
+.sub-title{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.highlight{         /* style for highlighting and underlining */
+    background-color: #ffff00;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none; /*put the child items of 'ul' into a horizontal line using flex */
+    display: flex;
+    justify-content: center; /*center child items in the center */
+    
+}
+
+li {                  /*create spacing between listed child items */
+    margin: 10px;
+    font-weight: bold;
+}
+
+.links-list a{  /*create clickable box where link is at with color */
+    background-color: rgba(255, 0, 93, 0.423);
+    padding: 1em 2em;
+}
+
+.links-list a:hover{ /*create pseudo-class selector to style link when user
+    hovers */
+    background-color: rgba(105, 12, 12, 0.618);
+    color: wheat;
+}
