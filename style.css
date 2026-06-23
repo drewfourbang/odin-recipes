@@ -18,6 +18,8 @@ body{   /*create universal rules for all elements*/
         
 }  
 
+/*Following rules are mainly for home page and some apply to the recipe pages as well */
+
 .odin-home{ /*create slightly darker container box */
     padding-bottom: 5px;
     margin-top: -10px; /*align header closer to the top of the page */
@@ -25,9 +27,10 @@ body{   /*create universal rules for all elements*/
     
 }
 
-.title, /*used in both the home page and recipe pages */
-.sub-title
-.centered {
+/*used in both the home page and recipe pages */
+.sub-title,
+.centered,
+.ingredients-list {
     text-align: center;
 }
 
@@ -52,24 +55,28 @@ body{   /*create universal rules for all elements*/
 }
 
 
-.links-list a{  /*create clickable box where link is at with color */
+.links-list a{  /*create clickable box where link is at with color on home page */
     background-color: rgba(255, 0, 93, 0.423);
     padding: 1em 2em;
+    margin-bottom: 5px;
 }
 
 .links-list a:hover{ /*create pseudo-class selector to style link when user
-    hovers */
+    hovers on home page */
     background-color: rgba(105, 12, 12, 0.618);
     color: wheat;
 }
 
-/*center images mainly used on recipe pages */
-.centered-figure{
-    text-align: center;
 
+
+/*Following rules mainly apply to the recipe pages */
+
+.centered img{ /* For image responsiveness mainly on recipe pages */
+    max-width: 100%;
 }
 
-.centered-figure img{ /* for image responsiveness */
-    max-width: 100%;
+.ingredients-list{
+    list-style-position: inside;
+
 }
 
