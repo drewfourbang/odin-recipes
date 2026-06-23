@@ -25,8 +25,9 @@ body{   /*create universal rules for all elements*/
     
 }
 
-.title,
-.sub-title{
+.title, /*used in both the home page and recipe pages */
+.sub-title
+.centered {
     text-align: center;
 }
 
@@ -41,17 +42,15 @@ body{   /*create universal rules for all elements*/
     text-decoration: underline;
 }
 
-ul {
+.links-list {
     list-style: none; /*put the child items of 'ul' into a horizontal line using flex */
     display: flex;
     justify-content: center; /*center child items in the center */
+    font-weight: bold;
+    gap: 20px;
     
 }
 
-li {                  /*create spacing between listed child items */
-    margin: 10px;
-    font-weight: bold;
-}
 
 .links-list a{  /*create clickable box where link is at with color */
     background-color: rgba(255, 0, 93, 0.423);
@@ -63,3 +62,14 @@ li {                  /*create spacing between listed child items */
     background-color: rgba(105, 12, 12, 0.618);
     color: wheat;
 }
+
+/*center images mainly used on recipe pages */
+.centered-figure{
+    text-align: center;
+
+}
+
+.centered-figure img{ /* for image responsiveness */
+    max-width: 100%;
+}
+
